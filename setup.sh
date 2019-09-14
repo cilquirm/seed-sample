@@ -1,3 +1,4 @@
 #!/bin/sh
-rustup default nightly
-cargo install cargo-web
+rustup update
+rustup target add wasm32-unknown-unknown
+cargo install --force cargo-make
